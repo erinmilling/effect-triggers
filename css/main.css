@@ -32,7 +32,7 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 200px;
-
+  transition: opacity .3s ease-out;
   background-color: limegreen;
   opacity: 0;
 }
