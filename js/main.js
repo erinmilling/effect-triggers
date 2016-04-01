@@ -7,7 +7,7 @@ var $btncollapseExpand = $('.btn-collapse-expand');
 var $circle = $('.circle');
 var $btnBounce = $('.btn-bounce');
 var $list = $('.list');
-var $btnAppend = $(.btn-append);
+var $btnAppend = $('.btn-append');
 
 
 $btnshowHide.on('click', function () {
