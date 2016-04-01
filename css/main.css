@@ -42,7 +42,7 @@ div {
   right: -100px;
   top: calc(50% - 40px);
   width: 80px;
-
+  transition: all 2s ease;
   background-color: hotpink;
   transform: rotate(45deg);
 }
@@ -69,7 +69,7 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 100px;
-
+  animation: bounce .5s cubic-bezier(.5, -0.9, .60, 1.9) forwards;
   background-color: orange;
   border-radius: 50%;
 }
@@ -99,3 +99,13 @@ div {
 
   color: mediumpurple;
 }
+
+@keyframes bounce{
+  0% {
+    height: 50px;
+    width: 50px;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+  }

@@ -26,7 +26,7 @@ $btnBounce.on('click', function () {
   $circle.toggleClass('bounce');
 });
 
-$btnlist.on('click', function (e) {
+$list.on('click', function (e) {
   var $li = $('<li>');
 
   e.preventDefault();
