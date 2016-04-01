@@ -13,3 +13,23 @@ var $btnAppend = $(.btn-append);
 $btnshowHide.on('click', function () {
   $box.toggleClass('appear');
 });
+
+$btnMove.on('click', function () {
+  $diamond.toggleClass('move');
+});
+
+$btncollapseExpand.on('click', function() {
+  $panel.toggleClass('collapse');
+});
+
+$btnBounce.on('click', function () {
+  $circle.toggleClass('bounce');
+});
+
+$btnlist.on('click', function (e) {
+  var $li = $('<li>');
+
+  e.preventDefault();
+  $li.html("new list item");
+  $list.append($li);
+});
