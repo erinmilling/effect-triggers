@@ -1,35 +1,35 @@
 var $box = $('.box');
 var $btnshowHide = $('.btn-show-hide');
 var $diamond = $('.diamond');
-var $btnMove = $('.btn-move');
+var $btnmove = $('.btn-move');
 var $panel = $('.panel');
-var $btncollapseExpand = $('.btn-collapse-expand');
+var $btncollapse = $('.btn-collapse-expand');
 var $circle = $('.circle');
-var $btnBounce = $('.btn-bounce');
+var $btnbounce = $('.btn-bounce');
 var $list = $('.list');
-var $btnList = $('.btn-append');
+var $btnlist = $('.btn-append');
 
 $btnshowHide.on('click', function () {
   $box.toggleClass('appear');
 });
 
-$btnMove.on('click', function () {
+$btnmove.on('click', function () {
   $diamond.toggleClass('move');
 });
 
-$btncollapseExpand.on('click', function () {
+$btncollapse.on('click', function () {
   $panel.toggleClass('collapse');
 });
 
-$btnBounce.on('click', function () {
+$btnbounce.on('click', function () {
   $circle.addClass('bounce');
 });
 
-$btnBounce.on('animationend', function () {
+$btnbounce.on('animationend', function () {
   $circle.removeClass('bounce');
 });
 
-$btnList.on('click', function (e) {
+$btnlist.on('click', function (e) {
   var $li = $('<li>');
 
   e.preventDefault();
