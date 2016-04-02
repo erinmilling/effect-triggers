@@ -25,7 +25,7 @@ $btnbounce.on('click', function () {
   $circle.addClass('bounce');
 });
 
-$btnbounce.on('animationend', function () {
+$circle.on('animationend', function () {
   $circle.removeClass('bounce');
 });
 
