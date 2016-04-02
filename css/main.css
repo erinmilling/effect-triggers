@@ -32,9 +32,14 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 200px;
-  transition: opacity .3s ease-out;
+
   background-color: limegreen;
   opacity: 0;
+  transition: opacity .3s ease-out;
+}
+
+.appear {
+  opacity: 1;
 }
 
 .diamond {
@@ -42,9 +47,20 @@ div {
   right: -100px;
   top: calc(50% - 40px);
   width: 80px;
-  transition: all 2s ease;
+
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: all 2s ease;
+}
+
+.move {
+  right: 50px;
+}
+
+@keyframes move {
+  0% { transform: translate(0,0); }
+
+  100% { transform: translate(-150px, 0); }
 }
 
 .panel {
