@@ -9,7 +9,6 @@ var $btnBounce = $('.btn-bounce');
 var $list = $('.list');
 var $btnAppend = $('.btn-append');
 
-
 $btnshowHide.on('click', function () {
   $box.toggleClass('appear');
 });
@@ -18,7 +17,7 @@ $btnMove.on('click', function () {
   $diamond.toggleClass('move');
 });
 
-$btncollapseExpand.on('click', function() {
+$btncollapseExpand.on('click', function () {
   $panel.toggleClass('collapse');
 });
 
@@ -30,6 +29,6 @@ $list.on('click', function (e) {
   var $li = $('<li>');
 
   e.preventDefault();
-  $li.html("new list item");
+  $li.html('new list item');
   $list.append($li);
 });
